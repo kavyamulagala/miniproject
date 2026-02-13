@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            padding: 20px;
+            background:lightslategrey; 
+            height: 50px;
+        }
+        header ul{
+            list-style: none;
+        }
+
+
+        header ul li {
+            display: inline;
+        }
+        header ul li a {
+            padding: 10px;
+            color: azure;
+            background-color: black;
+            font-size: 19px;
+        }
+        .kavya{
+            background:linear-gradient(to right, darkgrey,lightyellow);
+            color:black;
+            padding: 10px;
+            height:auto ;
+            display:grid;
+            grid-template-columns: 40% 60%;
+            font-size: larger;
+        }
+        .kavya div {
+            padding: 10px;
+            height: auto;
+            margin: 10px;
+            font-size: larger;
+
+        }
+        .image img{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .about{
+            padding: 10px;
+            height: auto;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            font-size: 20px;
+                 
+        }
+
+        .about div{
+            padding: 20px;
+            height: 400px;
+            margin: 10px;
+             
+            
+        }
+        .about .company_image img{
+            height: 50px;
+            width: 10%;
+        border-radius: 50px;
+         box-shadow: 0px 0px 50px black;
+        
+        }
+
+        .cards{
+            padding: 20px;
+            background-color: darkgray;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        
+        }
+        .cards div{
+            padding: 10px;
+            background-color:lightyellow;
+            height: 400px;
+            width: 300px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            justify-content: center;
+        }          
+            .card1{
+            padding: 20px;
+            background-color: darkgray;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        }
+        .card1 div{
+            padding: 10px;
+            background-color:lightyellow;
+            height: 400px;
+            width: 300px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            justify-content: center;
+        }          
+
+        .card1 img{
+            height: 200px;
+            width: 100%;
+        border-radius: 15px;
+         box-shadow: 0px 0px 15px black;
+         
+        }
+        
+         .card2{
+            padding: 20px;
+            background-color: darkgray;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        }
+        .card2 div{
+            padding: 10px;
+            background-color:lightyellow;
+            height: 400px;
+            width: 300px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            justify-content: center;
+        }          
+
+        .card2 img{
+            height: 200px;
+            width: 100%;
+        border-radius: 15px;
+         box-shadow: 0px 0px 15px black;
+         
+        }
+
+        .card3{
+            padding: 20px;
+            background-color: darkgray;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        }
+        .card3 div{
+            padding: 10px;
+            background-color:lightyellow;
+            height: 400px;
+            width: 300px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            justify-content: center;
+        }          
+
+        .card3 img{
+            height: 200px;
+            width: 100%;
+        border-radius: 15px;
+         box-shadow: 0px 0px 15px black;
+         
+        }
+        
+        .cards div:hover{
+            transform:sacle(1.5,1.5);
+            box-shadow: 0px 0px 20px black;
+            
+            
+        }
+        
+        .contact{
+            height: auto;
+
+        }
+        .contact form{
+            padding: 20px;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            box-shadow: 0px 0px 20px lightslategray;
+        }
+        .contact form input{
+            width: 98%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .contact form textarea{
+           width: 98%;
+           height: 150px;
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .content p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bar{
+            font-size: 30px;
+            padding: 10px;
+            display: none;
+        }
+
+
+        @media (max-width:568px) {
+            .container{
+                display: block;
+            }
+            .box{
+                display: block;
+            }
+            .contact{
+                display: block;
+            }
+            .kavya{
+                display: block;
+            }
+            header ul li{
+                display: block;
+            }
+            header{
+                height: auto;
+            }
+            .active_block{
+                display: block;
+            }
+            .bar{
+                display: inline;
+                cursor: pointer;
+            }
+            header ul{
+                display: none;
+            }
+            .about{
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!--section part-->
+        <section>
+            <div class="kavya">
+                <div class="title">
+                    <h2>Hello,Iam Kavya</h2>
+                    <h6>Iam a Video Editor </h6>
+                     <br>
+                    <h12>🎯 Planning & Organization<br>
+                        ✂️ Cutting & Flow<br>
+                        🎨 Color & Visuals<br>
+                        🔊 Audio (Very Important!)<br>
+                        📝 Text & Graphics<br>
+                        ⚙️ Export Settings<br>
+                        🧠 Pro Mindset Edits<br>
+                
+                    </h12>
+
+                </div>
+                <div class="image">
+                    <img src = "kavya.jpg" alt="kavya.jpg">
+                </div>
+                </div>
+                <!--About Content-->
+                <div class = "about">
+                    <div class="company-image">
+                     <img src="company.jpg" alt="company_image">
+                    </div>
+                 <div class ="content">
+                    <h2>About</h2>
+                    <p>I am a passionate video editor with a strong eye for detail and storytelling.
+I enjoy turning raw footage into meaningful and engaging visual content.
+I have experience working with various editing tools and techniques.
+My skills include cutting, color correction, sound syncing, and basic effects.
+I focus on creating smooth transitions and maintaining visual flow.
+I work closely with clients to understand their vision and goals.
+Meeting deadlines and delivering high-quality results is my priority.
+I adapt my editing style to different platforms and audiences.
+I continuously learn new trends and editing methods.
+My goal is to create videos that leave a lasting impact.</p>
+                 </div>
+                </div>
+                <!--project section-->
+                <center><h2>Specialities</h2></center>
+                <div class="--project">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="card1">
+        <div class="card1-image">
+            <img src="card1.jpg" alt="card1_image">
+        1.Skilled video editing we create clean, engaging videos.</div></div></div>
+                    <div class="card2"><div class="card1">
+        <div class="card2-image">
+            <img src="card2.jpg" alt="card2_image">2.Strong sense of storytelling and timing, ensuring smooth cuts, pacing, and visual flow</div></div></div>
+                    <div class="card3"><div class="card3">
+        <div class="card3-image">
+            <img src="card3.jpg" alt="card3_image">3.Experience with color correction, sound syncing, and basic motion graphics for polished final output.
+
+</div></div></div>
+       
+        
+                </div>
+                </div>
+                <!--contact section-->
+                <div class="contact">
+                    <form action="">
+                        <input type ="text" placeholder="Enter Your Name"><br>
+                        <input type ="Email" placeholder="Enter Your Email"><br>
+                        <input type ="Number" placeholder="Enter Your Mobile No"><br>
+                   <textarea></textarea><br>
+                   <input type="submit" value="contact us"></form>
+
+                   
+                </div>
+        </section>
+        <footer><p>@copy</p></footer>
+    </div>
+    <script>
+        var menu =document.querySelector(".menu");
+        var ulblock=document.querySelector(".ul-block");
+        var username=document.getElementById("name");
+        var email=document.getElementById("email");
+        var mobileNo=document.getElementById("mobile");
+        var msg=document.getElementById("message");
+
+        menu.addEventListener("click",() =>{
+            ulblock.classList.toggle("active-block"); });
+            function sendQuery(){
+                alert(username.value+email.value+mobileNo.value+"Query is"+msg.value);
+            }
+    </script>
+</body>
+</html>
